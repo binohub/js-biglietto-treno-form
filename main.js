@@ -22,20 +22,20 @@ dudeGenerate.addEventListener("click", function () {
     document.getElementById("card-age").innerHTML = (`età: ${dudeAge}`);
     //! output ticketFullPrice
     const ticketFullPrice = ticketPrice * dudeKm;
-    console.log(`prezzo totale: ${ticketFullPrice.toFixed(2)}€`);
+    document.getElementById("card-full-price").innerHTML = (`prezzo totale: ${ticketFullPrice.toFixed(2)}€`);
     //! output sale
     if (dudeAge < 18) {
         const dudeSale = (ticketFullPrice * 15) / 100;
-        console.log(`minorenne: sconto del 15% (${dudeSale.toFixed(2)}€)`);
+        document.getElementById("card-min").innerHTML = (`minorenne: sconto del 15% (${dudeSale.toFixed(2)}€)`);
         const ticketFinalPrice = ticketFullPrice - dudeSale;
-        console.log(`prezzo scontato: ${ticketFinalPrice.toFixed(2)}€`);
+        document.getElementById("card-min-sale").innerHTML = (`prezzo scontato: ${ticketFinalPrice.toFixed(2)}€`);
     } else if (dudeAge > 65) {
         const dudeSale = parseInt((ticketFullPrice * 35) / 100);
-        console.log(`over 65: sconto del 35% (${dudeSale.toFixed(2)}€)`);
+        document.getElementById("card-over").innerHTML = (`over 65: sconto del 35% (${dudeSale.toFixed(2)}€)`);
         const ticketFinalPrice = ticketFullPrice - dudeSale;
-        console.log(`prezzo scotato: ${ticketFinalPrice.toFixed(2)}€! 🤯`);
+        document.getElementById("card-over-sale").innerHTML = (`prezzo scotato: ${ticketFinalPrice.toFixed(2)}€! 🤯`);
     } else {
-        console.log(`prezzo NON scontabile: ${ticketFullPrice.toFixed(2)}€`);
+        document.getElementById("card-not-sale").innerHTML = (`prezzo NON scontabile: ${ticketFullPrice.toFixed(2)}€`);
     }
 
 });
