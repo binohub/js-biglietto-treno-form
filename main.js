@@ -4,22 +4,22 @@ dudeGenerate.addEventListener("click", function () {
 
     //! variabili standard
     const ticketPrice = 0.26;
-    console.log(`prezzo giornaliero: ${ticketPrice} al km`);
+    document.getElementById("card-price").innerHTML = (`prezzo giornaliero: ${ticketPrice} al km`);
     //! input name
     const dudeName = document.getElementById("dude-name").value;
-    console.log(`nome: ${dudeName}`);
+    document.getElementById("card-name").innerHTML = (`nome: ${dudeName}`);
     //! input km
     const dudeKm = parseInt(document.getElementById("dude-km").value);
     if (isNaN(dudeKm)) {
         alert("digita un numero di km valido!");
     }
-    console.log(`km da percorrere: ${dudeKm}`);
+    document.getElementById("card-km").innerHTML = (`km da percorrere: ${dudeKm}`);
     //! input age
     const dudeAge = parseInt(document.getElementById("dude-age").value);
     if (isNaN(dudeAge)) {
         alert("digita un età valida!");
     }
-    console.log(`età: ${dudeAge}`);
+    document.getElementById("card-age").innerHTML = (`età: ${dudeAge}`);
     //! output ticketFullPrice
     const ticketFullPrice = ticketPrice * dudeKm;
     console.log(`prezzo totale: ${ticketFullPrice.toFixed(2)}€`);
