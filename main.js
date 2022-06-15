@@ -5,6 +5,9 @@ dudeGenerate.addEventListener("click", function () {
     //! variabili standard
     const ticketPrice = 0.26;
     console.log(`prezzo giornaliero: ${ticketPrice} al km`);
+    //! input name
+    const dudeName = document.getElementById("dude-name").value;
+    console.log(`nome: ${dudeName}`);
     //! input km
     const dudeKm = parseInt(document.getElementById("dude-km").value);
     if (isNaN(dudeKm)) {
@@ -12,7 +15,7 @@ dudeGenerate.addEventListener("click", function () {
     }
     console.log(`km da percorrere: ${dudeKm}`);
     //! input age
-    const dudeAge = document.getElementById("dude-age").value;
+    const dudeAge = parseInt(document.getElementById("dude-age").value);
     if (isNaN(dudeAge)) {
         alert("digita un età valida!");
     }
@@ -34,7 +37,7 @@ dudeGenerate.addEventListener("click", function () {
     } else {
         console.log(`prezzo NON scontabile: ${ticketFullPrice.toFixed(2)}€`);
     }
-    
+
 });
 
 // document.getElementById("ticket-full-price").innerHTML = (`il prezzo totale è di ${ticketFullPrice.toFixed(2)}€ 💸`);
