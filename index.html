@@ -1,22 +1,26 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
     <title>Treni Italia</title>
-  </head>
-  <body>
-    <!-- <header>
+</head>
+
+<body>
+    <header>
         <nav class="">
             <nav
                 class="navbar navbar-expand-lg navbar-light bg-light justify-content-center justify-content-sm-between">
-                <a class="nav-link active" href="#"><img class="logo" src="./img/Treno_Frecciarossa_Logo.png" alt=""></a>
+                <a class="nav-link active" href="#"><img class="logo" src="./img/Treno_Frecciarossa_Logo.png"
+                        alt=""></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
                     aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -109,57 +113,68 @@
                 </div>
             </nav>
         </nav>
-    </header> -->
+    </header>
     <main>
-        <!-- <div class="container">
-            <div class="">
+        <div class="container">
+            <div>
                 <h1 class="display-4">ciao ragazze e ragazzi!</h1>
-                <p class="lead">vi aiutiamo a controllare il vostri biglietti mediante la nostra intelligenza artificiale! 😀</p>
+                <p class="lead">vi aiutiamo a controllare il vostri biglietti mediante la nostra intelligenza
+                    artificiale! 😀</p>
                 <hr class="my-4">
             </div>
 
-            <div>
-                <p>
-                    <strong><span id="ticket-price"></span></strong>
-                </p>
-                <p>
-                    <strong><span id="dude-km"></span></strong>
-                </p>
-                <p>
-                    <strong><span id="ticket-full-price"></span></strong>
-                </p>
-                <p>
-                    <strong><span id="dude-sale"></span></strong>
-                </p>
-                <p>
-                    <strong><span class="text-danger" id="ticket-final-price"></span></strong>
-                </p>
-            </div>
+            <form>
+                <div class="form-group row">
+                    <label class="col-sm-2 col-form-label">nome</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control-plaintext" id="dude-name" placeholder="Ex: xavier">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-sm-2 col-form-label">km da percorrere</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control-plaintext" id="dude-km" placeholder="Ex: 100">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-sm-2 col-form-label">età</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control-plaintext" id="dude-age" placeholder="Ex: 18">
+                    </div>
+                </div>
+                <button id="dude-generate" type="submitbutton" class="btn btn-danger badge-pill">ticket generator</button>
+            </form>
 
-            <div class="card" style="width: 18rem;">
+
+
+            <!-- <div class="card" style="width: 18rem;">
                 <img src="./img/200w.gif" class="card-img-top" alt="...">
                 <div class="card-body">
                   <h5 class="card-title">Il tuo biglietto!</h5>
                   <p class="card-text">ci piacerebbe avere il vostro sostegno per migliore la nostra inteligenta artificiale! dà un importante contributo aiutandoci con l'evoluzione del progetto. Quindi Grazie mille a tutti quelli che ci sostengono</p>
                   <a href="#" class="btn btn-primary">Acquista!</a>
                 </div>
-              </div>
+            </div> -->
 
-        </div> -->
-        <input id="dude-name" type="text" placeholder="inserisci nome">
-        <input id="dude-km" type="text" placeholder="inserisci il numero di km">
-        <input id="dude-age" type="text" placeholder="inserisci la tua età">
-        <button id="dude-generate" type="submitbutton" class="btn btn-primary">genera</button>
+        </div>
+        
 
     </main>
 
 
-    
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="./main.js"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-  </body>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+</body>
+
 </html>
